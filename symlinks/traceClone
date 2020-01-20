@@ -1,0 +1,2 @@
+#!/bin/bash
+su -s /bin/bash apache -c "/usr/bin/node /opt/WWW/kis.nekeng.ru/node/srv.js"

@@ -1,0 +1,15 @@
+Options -Indexes +SymLinksIfOwnerMatch
+RewriteEngine on
+RewriteBase /
+
+RewriteCond %{REQUEST_URI} !^/web/
+
+# Don't apply to URLs that go to existing files or folders
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Rewrite all those to insert /folder
+RewriteRule ^index\.php$ / [R=301,L,QSA]
+#RewriteRule ^(.*)$ http://nek-kis.ite-ng.new/web%{REQUEST_URI} [L]
+RewriteRule ^(.*)$ http://%{HTTP_HOST}/web%{REQUEST_URI} [L]
+
