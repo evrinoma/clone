@@ -40,7 +40,7 @@ watcher
 		console.log("success!")
 	});
 })
-.on('unlink',		(path) =>  {
+/*.on('unlink',		(path) =>  {
 	console.log('File', path, 'has been removed File [', pathTarget + path.substr(lenBase), ']');
 	
 	fs.stat(pathTarget + path.substr(lenBase), function(err, stat) {
@@ -60,6 +60,7 @@ watcher
 		})
 	}
 })
+*/
 .on('error',		(error) => {
 	console.error('Error happened', error);
 })
