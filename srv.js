@@ -1,7 +1,7 @@
 const chokidar = require('chokidar');
 const fs = require('fs-extra');
-const pathBase = 'BASE_PATH/'
-const pathTracking = pathBase + 'BASE_TARGET/'
+const pathBase = '/opt/WWW/exchange1C/kis.nekeng.ru/'
+const pathTracking = pathBase + 'out/'
 const pathTarget = pathBase + 'clone/'
 const lenBase = pathBase.length
 
