@@ -33,6 +33,6 @@ uninstall:
 	$(info ************ UNINSTALL clone**********)
 	rm -rf $(PREFIX)/$(TARGET)
 	rm -rf $(CONFIG)/$(START)
-	git chekout .
+	git checkout .
 
 
