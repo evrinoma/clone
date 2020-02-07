@@ -8,7 +8,7 @@ BASE_TARGET =
 DIR_NAME =
 
 all: $(TARGET)
-test_target:
+build_target:
 ifneq ($(BASE_PATH),)
 	echo "$(BASE_PATH)"
 ifneq ($(BASE_TARGET),)
@@ -24,8 +24,8 @@ run_target:
 	sed -i -e "s@BASE_PATH@$(BASE_PATH)@" $(SRC)
 	sed -i -e "s@BASE_TARGET@$(BASE_TARGET)@" $(SRC)
 	sed -i -e "s@DIR_NAME@$(DIR_NAME)@" $(TARGET)
-	run install
-install:
+	make deploy
+deploy:
 	$(info ************ INSTALL clone**********)
 	cp $(TARGET) $(PREFIX)/$(TARGET)
 	cp $(START) $(CONFIG)/$(START)
