@@ -1,2 +1,2 @@
 #!/bin/bash
-su -s /bin/bash -c "/usr/bin/node DIR_NAME/srv.js"
+su -s /bin/bash apache -c "/usr/bin/node DIR_NAME/srv.js"
