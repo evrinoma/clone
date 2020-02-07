@@ -16,10 +16,19 @@ ifneq ($(BASE_TARGET),)
 ifneq ($(DIR_NAME),)
 	echo "$(DIR_NAME)"
 	make run_target
+	/bin/true
+else
+	make error
 endif
+else
+	make error
 endif
+else
+	make error
 endif
+error:
 	echo "BASE_PATH BASE_TARGET DIR_NAME unset"
+	/bin/false
 run_target:
 	sed -i -e "s@BASE_PATH@$(BASE_PATH)@" $(SRC)
 	sed -i -e "s@BASE_TARGET@$(BASE_TARGET)@" $(SRC)
