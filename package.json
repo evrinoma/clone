@@ -13,7 +13,7 @@
   },
   "description": "",
   "dependencies": {
-    "chokidar": "^2.1.8",
+    "chokidar": "^4.0.3",
     "fs-extra": "^8.1.0"
   }
 }
