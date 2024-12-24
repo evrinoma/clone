@@ -4,6 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "/usr/bin/node /opt/clone/srv.js"
   },
   "keywords": [],
   "author": "",
