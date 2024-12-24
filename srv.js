@@ -2,7 +2,7 @@ const chokidar = require('chokidar');
 const fs = require('fs-extra');
 const pathBase = 'BASE_PATH/'
 const pathTracking = pathBase + 'BASE_TARGET/'
-const pathTarget = pathBase + 'clone/'
+const pathTarget = pathBase + 'BASE_DST/'
 const lenBase = pathBase.length
 
 const watcher = chokidar.watch(pathTracking, {

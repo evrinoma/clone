@@ -6,11 +6,12 @@ This project provides functionality to clone and manage files and folders based 
 ## Definitions
 - BASE_PATH: The root folder where the operation begins.
 - BASE_TARGET: The target folder where cloning will take place.
+- BASE_DST: The destination folder where cloning will take place.
 
 ## Makefile Commands
 Build and Setup
 Use the following command to build and configure the project:
-make build_target BASE_PATH=$BASE_PATH BASE_TARGET=$BASE_TARGET DIR_NAME=$DIR/$NAME
+make build_target BASE_PATH=$BASE_PATH BASE_TARGET=$BASE_TARGET BASE_DST=$BASE_DST DIR_NAME=$DIR/$NAME
 
 ## Uninstallation
 To remove the setup:
